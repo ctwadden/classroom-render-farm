@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farm Privacy Policy</title>
+<style>
+  :root { --bg: #fafaf8; --text: #1d1d1f; --muted: #5f6368; --accent: #1a73e8; --line: #e3e3e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #18181a; --text: #ececec; --muted: #a0a4ab; --accent: #8ab4f8; --line: #33333a; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; }
+  .date { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 1.1rem; margin: 28px 0 6px; border-top: 1px solid var(--line); padding-top: 20px; }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy: Classroom Render Farm</h1>
+  <p class="date">Last updated: 21 October 2026</p>
+
+  <p>Classroom Render Farm ("the farm") is a classroom tool, run by a teacher, that lets school lab computers render
+  Blender animation frames together. This page explains what data it uses and how.</p>
+
+  <h2>What Google data the farm can access</h2>
+  <p>The farm asks for one Google permission:
+  <code>https://www.googleapis.com/auth/drive.file</code>. It allows the farm to see, create, change and delete
+  <strong>only the Google Drive files that the farm itself created</strong>. The farm cannot see or open any other
+  files, email, contacts or other account data.</p>
+
+  <h2>What the farm stores</h2>
+  <ul>
+    <li>Render jobs: the Blender scene file sent by the teacher, the footage and images the scene uses, and the frames
+    rendered by the lab computers.</li>
+    <li>Small status files: which lab computer is rendering which frames, by computer name, and when.</li>
+  </ul>
+  <p>These files are kept in a folder called <strong>Classroom Farm</strong> in the Google Drive account that runs the farm.
+  They are not stored anywhere else, apart from temporary copies on the lab computers while they render, which are removed
+  afterwards.</p>
+
+  <h2>How the data is used</h2>
+  <p>Only to render the teacher's frames and return them. The farm does not use the data for advertising, profiling,
+  analytics or any other purpose. It does not sell, rent or share data with anyone, and it does not use the data to
+  train artificial-intelligence models.</p>
+
+  <h2>Students and footage</h2>
+  <p>Shots may include video of students filmed in class. The teacher who runs the farm is responsible for following the
+  school's rules on student images and media consent. Footage is only stored in the farm's own Drive folder, as described
+  above.</p>
+
+  <h2>Keeping and deleting data</h2>
+  <p>Jobs remain in the Classroom Farm folder until the teacher deletes them. The farm moves files it removes to the Drive's
+  Trash, where Google deletes them after 30 days. To remove everything, delete the Classroom Farm folder and empty the
+  Trash. To stop the farm accessing the Drive at all, remove "Classroom Render Farm" at
+  <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>The farm's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:chad.aigroove@gmail.com">chad.aigroove@gmail.com</a></p>
+
+  <p><a href="index.html">Classroom Render Farm home</a></p>
+</main>
+</body>
+</html>

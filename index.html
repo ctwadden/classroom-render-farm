@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classroom Render Farm</title>
+<style>
+  :root { --bg: #fafaf8; --text: #1d1d1f; --muted: #5f6368; --accent: #1a73e8; --card: #ffffff; --line: #e3e3e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #18181a; --text: #ececec; --muted: #a0a4ab; --accent: #8ab4f8; --card: #222226; --line: #33333a; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  p.lead { color: var(--muted); margin-top: 0; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+  h2 { font-size: 1.15rem; margin: 0 0 8px; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Classroom Render Farm</h1>
+  <p class="lead">A classroom tool that lets the computers in a school media lab render Blender animation frames together.</p>
+
+  <section>
+    <h2>What it does</h2>
+    <p>The teacher sends a Blender shot to the farm. Each lab computer, running the free Blender software that is already
+    installed, renders a few frames and returns them. The teacher collects the finished frames. Jobs can be scheduled for
+    evenings and weekends.</p>
+  </section>
+
+  <section>
+    <h2>How it uses Google Drive</h2>
+    <p>The farm stores its jobs (Blender files, footage used by the shot, and rendered frames) in one folder,
+    <strong>Classroom Farm</strong>, in the Google Drive account that runs the farm. It uses Google's
+    <code>drive.file</code> permission, which only allows it to see and change files the farm itself created.
+    It cannot see any other files in that Drive.</p>
+  </section>
+
+  <section>
+    <h2>Who it is for</h2>
+    <p>It is run by a teacher for their own class and is not a public service. There is no sign-up and no advertising.</p>
+  </section>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <footer>Contact: <a href="mailto:chad.aigroove@gmail.com">chad.aigroove@gmail.com</a></footer>
+</main>
+</body>
+</html>
